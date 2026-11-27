@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Política de Privacidad — Velocímetro</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background-color: #0c0f15;
+      color: #e6ebf2;
+      line-height: 1.65;
+      margin: 0;
+      padding: 2rem 1rem;
+    }
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      background: #151922;
+      border: 1px solid #242b38;
+      border-radius: 16px;
+      padding: 2rem;
+    }
+    h1, h2 { color: #ffffff; }
+    h1 { margin-top: 0; font-size: 1.75rem; }
+    h2 { margin-top: 1.6rem; font-size: 1.15rem; color: #64b5f6; }
+    a { color: #64b5f6; }
+    .meta { color: #9aa5b5; font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Política de Privacidad — Velocímetro</h1>
+    <p class="meta"><strong>Aplicación:</strong> Velocímetro (<code>com.psioneura.velocimetro</code>)<br />
+    <strong>Desarrollador:</strong> Psioneura<br />
+    <strong>Última actualización:</strong> 27 de noviembre de 2026</p>
+
+    <h2>1. Información que procesamos</h2>
+    <p>Velocímetro no requiere registro, cuenta de usuario, nombre, correo electrónico ni identificadores publicitarios.</p>
+    <p>Para cumplir su función principal, la aplicación accede a:</p>
+    <ul>
+      <li><strong>Ubicación precisa (GPS) en primer plano:</strong> mientras el monitoreo está activo (incluyendo cuando usás otras apps como Waze o bloqueás la pantalla mediante una notificación persistente de servicio en primer plano), se lee tu velocidad, rumbo y coordenadas geográficas en tiempo real.</li>
+    </ul>
+
+    <h2>2. Cómo se utilizan los datos</h2>
+    <ul>
+      <li><strong>Cálculo local:</strong> tu velocidad actual y la evaluación de exceso de velocidad se procesan exclusivamente en tu dispositivo.</li>
+      <li><strong>Consulta de límites de velocidad (OpenStreetMap):</strong> cuando te desplazás, la app envía de forma anónima las coordenadas aproximadas de tu zona actual mediante conexión cifrada (HTTPS) a servidores públicos de Overpass API (OpenStreetMap) para descargar los límites de velocidad (<code>maxspeed</code>) cercanos y almacenarlos temporalmente en memoria.</li>
+      <li><strong>Sin almacenamiento ni rastreo:</strong> Velocímetro no guarda historial de ubicaciones, no registra recorridos en servidores propios y no utiliza SDKs de publicidad ni analítica.</li>
+    </ul>
+
+    <h2>3. Permisos del dispositivo</h2>
+    <ul>
+      <li><strong>Ubicación precisa (<code>ACCESS_FINE_LOCATION</code>):</strong> medir la velocidad GPS y detectar el límite de velocidad de la vía.</li>
+      <li><strong>Servicio en primer plano de ubicación (<code>FOREGROUND_SERVICE_LOCATION</code>):</strong> mantener las alertas sonoras activas mientras conducís con Waze u otra app en pantalla.</li>
+      <li><strong>Notificaciones (<code>POST_NOTIFICATIONS</code>):</strong> mostrar la notificación obligatoria de monitoreo activo y los botones de silenciado/detención.</li>
+      <li><strong>Mostrar sobre otras apps (<code>SYSTEM_ALERT_WINDOW</code>, opcional):</strong> mostrar el mini-panel flotante encima de Waze.</li>
+    </ul>
+
+    <h2>4. Terceros y atribución</h2>
+    <p>Los datos cartográficos de límites de velocidad provienen de <strong>© OpenStreetMap contributors</strong> bajo licencia ODbL a través de servidores públicos de Overpass API y OpenStreetMap (<a href="https://overpass.openstreetmap.fr/">overpass.openstreetmap.fr</a>, <a href="https://overpass-api.de/">overpass-api.de</a>, <a href="https://overpass.private.coffee/">overpass.private.coffee</a> y <a href="https://api.openstreetmap.org/">api.openstreetmap.org</a>). Estas consultas no incluyen información personal ni identificadores del dispositivo.</p>
+
+    <h2>5. Preferencias locales</h2>
+    <p>Las configuraciones locales (tolerancia en km/h, límite por defecto y aceptación del aviso de ubicación) se guardan únicamente en el almacenamiento privado de tu dispositivo (<code>SharedPreferences</code>) y pueden incluirse en la copia de seguridad estándar de Android.</p>
+
+    <h2>6. Contacto</h2>
+    <p>Si tenés dudas sobre esta política de privacidad, podés escribir a: <a href="mailto:psioneura@gmail.com">psioneura@gmail.com</a></p>
+  </main>
+</body>
+</html>
